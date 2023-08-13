@@ -158,8 +158,8 @@ const cekDPT = async () => {
               <el-descriptions direction="vertical" :column="3" size="default" border>
                 <el-descriptions-item align="center" label="Nama pemilih" :span="3">{{ result_dpt.nama
                 }}</el-descriptions-item>
-                <el-descriptions-item label="NIK">{{ result_dpt.nik }}</el-descriptions-item>
-                <el-descriptions-item label="NKK">{{ result_dpt.nkk }}</el-descriptions-item>
+                <el-descriptions-item label="NIK">{{ result_dpt.nik.replace('**********', '***') }}</el-descriptions-item>
+                <el-descriptions-item label="NKK">{{ result_dpt.nkk.replace('**********', '***') }}</el-descriptions-item>
                 <el-descriptions-item label="Kabupaten">{{ result_dpt.kabupaten }}</el-descriptions-item>
                 <el-descriptions-item label="Kecamatan">{{ result_dpt.kecamatan }}</el-descriptions-item>
                 <el-descriptions-item label="Kelurahan">{{ result_dpt.kelurahan }}</el-descriptions-item>
